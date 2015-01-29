@@ -1,0 +1,9 @@
+Simple uncompressed pixel data:
+
+0x0: (BYTE) grid_size_x
+0x1: (BYTE) grid_size_y
+
+    - For each ArtNet universe, for each pixel
+0xX: (BYTE) red
+0xY: (BYTE) green
+0xZ: (BYTE) blue

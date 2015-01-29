@@ -1,13 +1,18 @@
 <component name="ArtifactManager">
-  <artifact name="GlediatorToDisk:jar">
+  <artifact build-on-make="true" name="GlediatorToDisk:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/GlediatorToDisk_jar</output-path>
     <root id="root">
-      <element id="archive" name="GlediatorToDisk.jar">
-        <element id="module-output" name="GlediatorToDisk" />
+      <element id="directory" name="GlediatorToDisk">
+        <element id="directory" name="output">
+          <element id="file-copy" path="$PROJECT_DIR$/format_description.txt" />
+        </element>
+        <element id="library" level="project" name="aspectjweaver" />
+        <element id="library" level="project" name="aspectjrt" />
+        <element id="archive" name="GlediatorToDisk.jar">
+          <element id="module-output" name="GlediatorToDisk" />
+        </element>
       </element>
-      <element id="library" level="project" name="aspectjweaver" />
-      <element id="library" level="project" name="aspectjrt" />
-      <element id="directory" name="output" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/run_patched.bat" />
     </root>
   </artifact>
 </component>
