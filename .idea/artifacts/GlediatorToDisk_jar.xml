@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="GlediatorToDisk:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GlediatorToDisk_jar</output-path>
+    <root id="root">
+      <element id="archive" name="GlediatorToDisk.jar">
+        <element id="module-output" name="GlediatorToDisk" />
+      </element>
+      <element id="library" level="project" name="aspectjweaver" />
+      <element id="library" level="project" name="aspectjrt" />
+      <element id="directory" name="output" />
+    </root>
+  </artifact>
+</component>

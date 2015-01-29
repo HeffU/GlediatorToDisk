@@ -1,0 +1,6 @@
+<aspectj>
+ <aspects>
+   <aspect name="ArtNetOutputAspect"/>
+ </aspects>
+ <weaver options="-verbose"/>
+</aspectj>

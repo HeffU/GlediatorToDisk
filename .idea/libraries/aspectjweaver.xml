@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="aspectjweaver">
+    <CLASSES>
+      <root url="jar://S:/Programs/JDK/AspectJ/lib/aspectjweaver.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
