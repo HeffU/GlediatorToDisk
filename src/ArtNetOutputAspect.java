@@ -150,6 +150,7 @@ public class ArtNetOutputAspect {
             }
             offset += count;
         }
-        Files.write(path, buffer, StandardOpenOption.APPEND);
+
+        Files.write(path, output, StandardOpenOption.APPEND);
     }
 }
