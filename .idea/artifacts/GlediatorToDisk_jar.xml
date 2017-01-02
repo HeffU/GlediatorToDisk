@@ -11,6 +11,9 @@
         <element id="archive" name="GlediatorToDisk.jar">
           <element id="module-output" name="GlediatorToDisk" />
         </element>
+        <element id="directory" name="settings">
+          <element id="dir-copy" path="$PROJECT_DIR$/settings" />
+        </element>
       </element>
       <element id="file-copy" path="$PROJECT_DIR$/src/run_patched.bat" />
       <element id="file-copy" path="$PROJECT_DIR$/src/run_patched.sh" />
