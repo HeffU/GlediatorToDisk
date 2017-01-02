@@ -13,6 +13,7 @@
         </element>
       </element>
       <element id="file-copy" path="$PROJECT_DIR$/src/run_patched.bat" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/run_patched.sh" />
     </root>
   </artifact>
 </component>
