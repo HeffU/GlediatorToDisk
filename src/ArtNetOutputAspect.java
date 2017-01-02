@@ -35,6 +35,7 @@ public class ArtNetOutputAspect {
         size_x = _map.length;
         size_y = _map[0].length;
 
+        // our own map array for easier access
         patch_map = new int[num_unis][1];
         data_length = new int[num_unis];
 
@@ -48,7 +49,7 @@ public class ArtNetOutputAspect {
                 patch_map[i][j] = -1;
             }
         }
-        // Loop through and fill the patch mapping with data
+        // Loop through and fill the patch mapping with data from the artnet map
         for (int x = 0; x < size_x; x++) {
             for (int y = 0; y < size_y; y++)
             {
@@ -123,7 +124,7 @@ public class ArtNetOutputAspect {
         if (size_x*size_y <=0 || size_x*size_y > frame.length*3)
             return;
 
-        // Loop through all pixels and assign from frame data
+        // Loop through all pixels and assign from frame data to a temporary buffer
         for (int x = 0; x < size_x; x++) {
             for (int y = 0; y < size_y; y++)
             {
@@ -135,7 +136,7 @@ public class ArtNetOutputAspect {
             }
         }
 
-        // Loop through universes/channels and move to final buffer's order
+        // Loop through universes/channels and move to final output order
         int offset = 0;
         for (int uni = 0; uni < num_unis; uni++)
         {
