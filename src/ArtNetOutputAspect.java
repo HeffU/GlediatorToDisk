@@ -78,7 +78,7 @@ public class ArtNetOutputAspect {
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd__hh-mm-ss");
         String dateStr = dateFormat.format(cal.getTime());
-        path = Paths.get("GlediatorToDisk\\output", dateStr + ".led");
+        path = Paths.get("GlediatorToDisk\\output", dateStr + ".ledbar");
         Files.createFile(path);
 
         // Begin the output file with writing matrix dimensions as per the format
